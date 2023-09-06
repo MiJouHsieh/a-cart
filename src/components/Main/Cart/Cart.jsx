@@ -7,30 +7,30 @@ export default function Cart() {
 
           <section className={`${styles.productList} col col-12`} data-total-price="0">
             <div className={`${styles.productContainer} col col-12`} data-count="0" data-price="3999">
-              {/* <img className={styles.imgContainer} src="../../../public/images/product-1.png" alt="product-1"/> */}
+              <img className={styles.imgContainer} src="./images/product-1.png" alt="product-1"/>
               <div className={styles.productInfo}>
                 <div className={styles.productName}>破壞補丁修身牛仔褲</div>
                 <div className={styles.productControlContainer}>
                   <div className={styles.productControl}>
-                    {/* <svg className={`${styles.productAction} minus`} src="../../../public/icons/minus.svg" aria-label="icon-minus"></svg> */}
+                    <img className={`${styles.productAction} minus`} src="./icons/minus.svg" alt="icon-minus" />
                     
                     <span className={styles.productCount}>0</span>
-                    {/* <svg className={`${styles.productAction} plus`} src="../../../public/icons/plus.svg" aria-label="icon-plus"></svg> */}
+                    <img className={`${styles.productAction} plus`} src="./icons/plus.svg" alt="icon-plus" />
                   </div>
                 </div>
                 <div className={styles.price}>$0</div>
               </div>
             </div>
             <div className={`${styles.productContainer} col col-12`} data-count="0" data-price="1299">
-              {/* <img className={styles.imgContainer} src="../../../public/images/product-2.jpg" alt="product-2"/> */}
+              <img className={styles.imgContainer} src="./images/product-2.png" alt="product-2"/>
               <div className={styles.productInfo}>
                 <div className={styles.productName}>刷色直筒牛仔褲</div>
                 <div className={styles.productControlContainer}>
                   <div className={styles.productControl}>
-                    {/* <img className={`${styles.productAction} minus`} src="../../../public/icons/minus.svg" aria-label="icon-minus"/> */}
+                    <img className={`${styles.productAction} minus`} src="./icons/minus.svg" alt="icon-minus" />
                     
                     <span className={styles.productCount}>0</span>
-                    {/* <img className={`${styles.productAction} plus`} src="../../../public/icons/plus.svg" aria-label="icon-plus"/> */}
+                    <img className={`${styles.productAction} plus`} src="./icons/plus.svg" alt="icon-plus" />
                   </div>
                 </div>
                 <div className={styles.price}>$0</div>
