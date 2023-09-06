@@ -1,0 +1,74 @@
+.progressControlContainer {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.buttonGroup {
+    padding-top: 24px;
+    border-top: 1px solid #E6E6EB;
+
+    button {
+        display: flex;
+        align-items: center;
+        height: 46px;
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        border-radius: 8px;
+        border-width: 0px;
+        padding: 0px;
+
+        & > object {
+            width: 24px;
+            height: 24px;
+        }
+
+        &.prev {
+            background-color: transparent;
+            line-height: 20px;
+            font-weight: 400;
+            color: #000000;
+
+            > object {
+                margin-right: 12px;
+            }
+        }
+        &.next {
+            justify-content: center;
+            width: 174px;
+            font-weight: 500;
+            line-height: 17px;
+            background: var(--pink);
+            //background: red;          //有
+
+            color: #FFFFFF;
+            margin-left: auto;
+
+            > object {
+                margin-left: 12px;
+            }
+        }
+    }
+}
+
+$screen-break-point: 749.5px; //base 是宣告最上方 
+@media screen and (max-width: $screen-break-point) {
+  section.progressControlContainer {
+    position: relative;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+  section.buttonGroup {
+    button.next {
+      width: 156px;
+    }
+
+    &[data-phase='address'] {
+      button.next {
+        width: 100%;
+        outline: 5px solid green; //有
+      }
+    }
+  }
+}
